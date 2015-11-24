@@ -19,13 +19,13 @@ git clone https://github.com/zaiddabaeeen/gpiou3p
 2. Setup the pin directions
 
    ```python
-   gpio.setup(PIN.GPIO199, DIRECTION.OUT)
+   gpio.setup(gpio.PIN.GPIO199, gpio.DIRECTION.OUT)
    ```
 
 3. Write to the pin
 
    ```python
-   gpio.write(1, PIN.GPIO199)
+   gpio.write(1, gpio.PIN.GPIO199)
    ```
 
 Check `gpiou3p-test.py` file for a test case that blinks an LED.
