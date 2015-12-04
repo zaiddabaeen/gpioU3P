@@ -10,24 +10,36 @@ git clone https://github.com/zaiddabaeeen/gpiou3p
 
 ###Usage
 
-1. Simply import the library
+Simply import the library
 
-   ```python
-   import gpiou3p as gpio
-   ```
+    import gpiou3p as gpio
 
-2. Setup the pin directions
 
-   ```python
-   gpio.setup(gpio.PIN.GPIO199, gpio.DIRECTION.OUT)
-   ```
+####Writing to the pin
 
-3. Write to the pin
+1. Setup the pin directions
 
-   ```python
-   gpio.write(1, gpio.PIN.GPIO199)
-   ```
+        gpio.setup(gpio.PIN.GPIO199, gpio.DIRECTION.OUT)
+   
 
-Check `gpiou3p-test.py` file for a test case that blinks an LED.
+2. Write to the pin
+ 
+        gpio.write(1, gpio.PIN.GPIO199)
 
->You need sudo previliges to be able to edit the GPIO pins on the Odroid U3+
+####Reading the pin
+
+1. Setup the pin directions
+
+        gpio.setup(gpio.PIN.GPIO199, gpio.DIRECTION.IN)
+   
+2. Read the pin
+
+        gpio.read(gpio.PIN.GPIO199)
+
+
+Check `example.py` file for an example case that blinks an LED.
+
+>You need sudo privileges to be able to edit the GPIO pins on the Odroid U3+
+
+###More Information
+Check out the blog post http://nasa.z-proj.com/accessing-gpio-pins-on-the-odroid-u3/ for more information on the GPIO pins and schematics.
