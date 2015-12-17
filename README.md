@@ -43,3 +43,6 @@ Check `example.py` file for an example case that blinks an LED.
 
 ###More Information
 Check out the blog post http://nasa.z-proj.com/accessing-gpio-pins-on-the-odroid-u3/ for more information on the GPIO pins and schematics.
+
+###License
+GNU GPL V3
